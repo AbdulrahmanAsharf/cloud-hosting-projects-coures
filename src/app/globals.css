@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --be-color: #f5f5f5;
+}
+
+
+body {
+  background: var(--be-color);
+}
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.fix-height {
+  min-height: calc(100vh - 150px);
+}
+
+.overflow-height {
+  height: calc(100vh - 150px);
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
